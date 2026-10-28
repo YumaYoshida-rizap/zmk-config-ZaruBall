@@ -34,6 +34,11 @@
     };
 };
 
+// キーを押してから500ms以内はトラックボールでマウスレイヤに切り替えない
+&zip_temp_layer {
+    require-prior-idle-ms = <500>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
